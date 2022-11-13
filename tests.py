@@ -9,7 +9,7 @@ class AdditionTest(unittest.TestCase):
 
 
     def test_inputs_out_of_scope_raise_exceptions(self):
-        for bad_input in (2, None, 'Z', 'V', 'X', 'L', 'C', 'D', 'M'):
+        for bad_input in (2, None, 'Z', 'X', 'L', 'C', 'D', 'M'):
             with self.assertRaises(ValueError) as m:
                 add('I', bad_input)
                 if not hasattr(m, 'exception'):
