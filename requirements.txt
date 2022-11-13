@@ -3,3 +3,4 @@ setuptools==60.2.0
 wheel==0.37.1
 coverage==6.5.0
 unittest
+pytest~=7.2.0

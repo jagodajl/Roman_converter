@@ -48,7 +48,6 @@ class AdditionTest(unittest.TestCase):
 # TOTAL         46     10    78%
 # (jagodajeczmien-lazur) jagodajeczmien-lazur@iMac-Radoslaw roman_converter % '
 
-# I hope it's enough to get the assignment done
 
 if __name__ == '__main__':
     unittest.main()
