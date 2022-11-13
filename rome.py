@@ -1,7 +1,9 @@
 def add(augend, addend):
-    if not isinstance(augend, basestring) or not isinstance(addend, basestring):
+    if not isinstance(augend, str) or not isinstance(addend, str):
         raise ValueError
     simple_sum = augend + addend
     if any(char != 'I' for char in simple_sum):
         raise ValueError
-    return simple_sum
+
+    canonicalised_sum = simple_sum.replace('IIII', 'IV')
+    return canonicalised_sum
