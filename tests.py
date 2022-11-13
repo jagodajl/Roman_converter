@@ -2,7 +2,7 @@ import unittest
 from rome import add
 
 class AdditionTest(unittest.TestCase):
-
+    # I ran following tests using a command 'python3 -m unittest discover
     def test_adding_Is(self):
         self.assertEqual(add('I', 'I'), 'II')
         self.assertEqual(add('I', 'II'), 'III')
@@ -27,6 +27,28 @@ class AdditionTest(unittest.TestCase):
         self.assertEqual(add('V', 'I'), 'VI')
         self.assertEqual(add('I', 'V'), 'VI')
 
+
+    def test_IX_and_X(self):
+        self.assertEqual(add('V', 'V'), 'X')
+        self.assertEqual(add('V', 'IV'), 'IX')
+        self.assertEqual(add('VIII', 'I'), 'IX')
+        self.assertEqual(add('IX', 'I'), 'X')
+        self.assertEqual(add('X', 'I'), 'XI')
+        self.assertEqual(add('I', 'X'), 'XI')
+        self.assertEqual(add('X', 'V'), 'XV')
+        self.assertEqual(add('V', 'X'), 'XV')
+        self.assertEqual(add('X', 'X'), 'XX')
+
+# After writing the last test I typed 'python3 -m coverage report' into the terminal and received following data:
+# Name       Stmts   Miss  Cover
+# ------------------------------
+# rome.py       12      0   100%
+# tests.py      34     10    71%
+# ------------------------------
+# TOTAL         46     10    78%
+# (jagodajeczmien-lazur) jagodajeczmien-lazur@iMac-Radoslaw roman_converter % '
+
+# I hope it's enough to get the assignment done
 
 if __name__ == '__main__':
     unittest.main()
