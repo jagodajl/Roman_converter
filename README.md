@@ -1,0 +1,2 @@
+This is a simple program that converts Roman numerals to Arabic numerals - and vice versa. It works with strings and can convert numbers from I to MMMCMXCIX (1 to 3999 decimal). It is based on a convention-compliant form of writing (e.g., 4 is IV, not IIII). The program has been covered with unit tests (unittest, 50% files, 94% lines covered). The most important feature of this program is that it was created following the assumptions of TDD.
+To use the program, enter a Roman or Arabic number at the end of the converter.py file and click 'Run' in your console.

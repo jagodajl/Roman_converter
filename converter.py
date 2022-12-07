@@ -75,8 +75,8 @@ def from_roman(roman_numeral):
 
 # checking how it works
 if __name__ == "__main__":
-    arabic_number = 942
+    arabic_number = 987
     print(to_roman(arabic_number))
 
-    roman_numeral = "XVII"
+    roman_numeral = "XVI"
     print(from_roman(roman_numeral))
